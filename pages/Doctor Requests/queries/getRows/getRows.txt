@@ -1,0 +1,33 @@
+query Doctors {
+  Doctors(where: { DeletedAt: {_is_null: true}}) {
+    VerificationStatus
+    DoctorCredentialsAttachments {
+      urls {
+        path
+        signed_url
+      }
+    }
+    CreatedDate
+    Degree
+    MedicalField
+    University
+    User {
+      FirstName
+      Gender
+      LastName
+      UserId
+      Email
+    }
+		VerificationStatusEvents {
+			EventId
+			CreatedDate
+			Status
+			Notes
+			User {
+				FirstName
+				LastName
+				UserId
+			}
+		}
+  }
+}

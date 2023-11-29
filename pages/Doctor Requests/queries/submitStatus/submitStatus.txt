@@ -1,0 +1,5 @@
+mutation VerifyDoctor($userId: String!, $notes: String!, $verifierUserId: String!, $status: verification_status!) {
+  insert_VerificationStatusEvent_one(object: {Notes: $notes, TargetDoctorUserId: $userId, VerifierUserId: $verifierUserId, Status: $status, Active: true, CreatedDate: "now()"}) {
+    EventId
+  }
+}
