@@ -18,7 +18,7 @@
     "mobileRightColumn": 63,
     "animateLoading": true,
     "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 21.713004484304932,
+    "leftColumn": 39.44140625,
     "dynamicBindingPathList": [
         {"key": "buttonColor"},
         {"key": "borderRadius"}
@@ -28,7 +28,7 @@
     "key": "xbo173v6ax",
     "flexVerticalAlignment": "end",
     "isDeprecated": false,
-    "rightColumn": 46.780269058295964,
+    "rightColumn": 54,
     "isDefaultClickDisabled": true,
     "iconName": "menu",
     "widgetId": "05btcxpg7s",
