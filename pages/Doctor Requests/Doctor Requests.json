@@ -74,18 +74,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Doctor Requests_JSObject1.myFun2",
-              "name": "JSObject1.myFun2",
-              "collectionId": "Doctor Requests_JSObject1",
-              "clientSideExecution": true,
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async function () {\n  await currentUser.run();\n  o = currentUser.data;\n  return await Text6.setText(\"Hello, \" + o.data.Users[0].FirstName);\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "Doctor Requests_currentUser",
               "name": "currentUser",
               "confirmBeforeExecute": false,
@@ -98,23 +86,23 @@
           ],
           [
             {
+              "id": "Doctor Requests_JSObject1.myFun2",
+              "name": "JSObject1.myFun2",
+              "collectionId": "Doctor Requests_JSObject1",
+              "clientSideExecution": true,
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  await currentUser.run();\n  o = currentUser.data;\n  return await Text6.setText(\"Hello, \" + o.data.Users[0].FirstName);\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "Doctor Requests_getRows",
               "name": "getRows",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Doctor Requests_parseLookupEGDoctor.parse",
-              "name": "parseLookupEGDoctor.parse",
-              "collectionId": "Doctor Requests_parseLookupEGDoctor",
-              "clientSideExecution": true,
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async function () {\n  await LookupEGDoctor.run();\n  function mapDOM(element, json) {\n    var treeObject = {};\n    const match = element.indexOf(\"<table\");\n    console.log(\"match: \" + match);\n    if (match >= 0) {\n      const match2 = element.indexOf(\"</table>\", match + 1);\n      element = element.substring(match, match2 + 8);\n      console.log(\"cut element:\" + element.toString());\n    } else {\n      console.log(\"Table block not found in the text\");\n      return [];\n    }\n    if (typeof element === \"string\") {\n      if (window.DOMParser) {\n        console.log(\"DOMParse is available\");\n        parser = new DOMParser();\n        docNode = parser.parseFromString(element, \"text/html\");\n      } else {\n        console.log(\"Microsoft.XMLDOM\");\n        docNode = new ActiveXObject(\"Microsoft.XMLDOM\");\n        docNode.async = false;\n        docNode.loadXML(element);\n      }\n      element = docNode.firstChild;\n    } else {\n      console.log(\"data is : \" + typeof data);\n    }\n    function treeHTML(element, object) {\n      object[\"type\"] = element.nodeName;\n      var nodeList = element.childNodes;\n      if (nodeList != null) {\n        if (nodeList.length) {\n          object[\"content\"] = [];\n          for (var i = 0; i < nodeList.length; i++) {\n            if (nodeList[i].nodeType == 3) {\n              object[\"content\"].push(nodeList[i].nodeValue);\n            } else {\n              object[\"content\"].push({});\n              treeHTML(nodeList[i], object[\"content\"][object[\"content\"].length - 1]);\n            }\n          }\n        }\n      }\n      if (element.attributes != null) {\n        if (element.attributes.length) {\n          object[\"attributes\"] = {};\n          for (var i = 0; i < element.attributes.length; i++) {\n            object[\"attributes\"][element.attributes[i].nodeName] = element.attributes[i].nodeValue;\n          }\n        }\n      }\n    }\n    treeHTML(element, treeObject);\n    return json ? JSON.stringify(treeObject) : treeObject;\n  }\n  var initElement = LookupEGDoctor.data;\n  var json = mapDOM(initElement, false);\n  if (json.content) {\n    console.log(json.content[3].content.map(c => c.content));\n    json = json.content[3].content.map(c => c.content).map(o => {\n      if (o && o[1] && o[3]) {\n        return {\n          \"name\": o[1].content[0],\n          \"speciality\": o[3].content[0]\n        };\n      }\n    }).filter(v => v != null);\n  }\n  return json;\n}"
-              ],
               "timeoutInMillisecond": 10000
             }
           ],
@@ -126,6 +114,20 @@
               "pluginType": "API",
               "jsonPathKeys": [
                 "tblDoctorEgName.searchText"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Doctor Requests_parseLookupEGDoctor.parse",
+              "name": "parseLookupEGDoctor.parse",
+              "collectionId": "Doctor Requests_parseLookupEGDoctor",
+              "clientSideExecution": true,
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  await LookupEGDoctor.run();\n  function mapDOM(element, json) {\n    var treeObject = {};\n    const match = element.indexOf(\"<table\");\n    console.log(\"match: \" + match);\n    if (match >= 0) {\n      const match2 = element.indexOf(\"</table>\", match + 1);\n      element = element.substring(match, match2 + 8);\n      console.log(\"cut element:\" + element.toString());\n    } else {\n      console.log(\"Table block not found in the text\");\n      return [];\n    }\n    if (typeof element === \"string\") {\n      if (window.DOMParser) {\n        console.log(\"DOMParse is available\");\n        parser = new DOMParser();\n        docNode = parser.parseFromString(element, \"text/html\");\n      } else {\n        console.log(\"Microsoft.XMLDOM\");\n        docNode = new ActiveXObject(\"Microsoft.XMLDOM\");\n        docNode.async = false;\n        docNode.loadXML(element);\n      }\n      element = docNode.firstChild;\n    } else {\n      console.log(\"data is : \" + typeof data);\n    }\n    function treeHTML(element, object) {\n      object[\"type\"] = element.nodeName;\n      var nodeList = element.childNodes;\n      if (nodeList != null) {\n        if (nodeList.length) {\n          object[\"content\"] = [];\n          for (var i = 0; i < nodeList.length; i++) {\n            if (nodeList[i].nodeType == 3) {\n              object[\"content\"].push(nodeList[i].nodeValue);\n            } else {\n              object[\"content\"].push({});\n              treeHTML(nodeList[i], object[\"content\"][object[\"content\"].length - 1]);\n            }\n          }\n        }\n      }\n      if (element.attributes != null) {\n        if (element.attributes.length) {\n          object[\"attributes\"] = {};\n          for (var i = 0; i < element.attributes.length; i++) {\n            object[\"attributes\"][element.attributes[i].nodeName] = element.attributes[i].nodeValue;\n          }\n        }\n      }\n    }\n    treeHTML(element, treeObject);\n    return json ? JSON.stringify(treeObject) : treeObject;\n  }\n  var initElement = LookupEGDoctor.data;\n  var json = mapDOM(initElement, false);\n  if (json.content) {\n    console.log(json.content[3].content.map(c => c.content));\n    json = json.content[3].content.map(c => c.content).map(o => {\n      if (o && o[1] && o[3]) {\n        return {\n          \"name\": o[1].content[0],\n          \"speciality\": o[3].content[0]\n        };\n      }\n    }).filter(v => v != null);\n  }\n  return json;\n}"
               ],
               "timeoutInMillisecond": 10000
             }

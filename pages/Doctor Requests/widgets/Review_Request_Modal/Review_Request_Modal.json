@@ -35,7 +35,7 @@
         "canExtend": true,
         "hideCard": true,
         "shouldScrollContents": false,
-        "minHeight": 526,
+        "minHeight": 1142.0000000000002,
         "mobileRightColumn": 391.125,
         "useAutoLayout": true,
         "parentColumnSpace": 1,
@@ -126,6 +126,6 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 14,
     "maxDynamicHeight": 9000,
-    "width": 456,
+    "width": 778,
     "minDynamicHeight": 8
 }

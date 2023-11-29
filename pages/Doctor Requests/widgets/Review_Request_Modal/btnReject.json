@@ -20,7 +20,7 @@
     "animateLoading": true,
     "parentColumnSpace": 6.96875,
     "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 46.780269058295964,
+    "leftColumn": 54,
     "dynamicBindingPathList": [{"key": "borderRadius"}],
     "text": "Reject",
     "isDisabled": false,
