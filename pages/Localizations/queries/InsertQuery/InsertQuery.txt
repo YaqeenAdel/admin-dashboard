@@ -1,0 +1,14 @@
+INSERT INTO public."ResourceLocalization" (
+	"TranslationId",
+	"Language",
+	"Translation",
+	"CancerStageStageId",
+	"CancerTypeCancerId",
+	"InterestId")
+VALUES (
+	'{{insert_form.formData.TranslationId}}',
+	'{{insert_form.formData.Language}}',
+	'{{insert_form.formData.Translation}}',
+	'{{insert_form.formData.CancerStageStageId}}',
+	'{{insert_form.formData.CancerTypeCancerId}}',
+	'{{insert_form.formData.InterestId}}');

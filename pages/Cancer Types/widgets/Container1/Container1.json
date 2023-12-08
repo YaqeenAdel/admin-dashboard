@@ -1,0 +1,86 @@
+{
+    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+    "widgetName": "Container1",
+    "borderColor": "#fff",
+    "dynamicPropertyPathList": [
+        {"key": "borderRadius"},
+        {"key": "boxShadow"}
+    ],
+    "topRow": 0,
+    "bottomRow": 86.2,
+    "parentRowSpace": 10,
+    "type": "CONTAINER_WIDGET",
+    "shouldScrollContents": true,
+    "parentColumnSpace": 19.75,
+    "dynamicTriggerPathList": [],
+    "leftColumn": 0,
+    "dynamicBindingPathList": [
+        {"key": "borderRadius"},
+        {"key": "boxShadow"}
+    ],
+    "children": [{
+        "boxShadow": "none",
+        "widgetName": "Canvas1",
+        "topRow": 0,
+        "bottomRow": 862,
+        "parentRowSpace": 1,
+        "canExtend": false,
+        "type": "CANVAS_WIDGET",
+        "minHeight": 850,
+        "useAutoLayout": true,
+        "parentColumnSpace": 1,
+        "dynamicTriggerPathList": [],
+        "leftColumn": 0,
+        "dynamicBindingPathList": [],
+        "positioning": "vertical",
+        "labelTextSize": "0.875rem",
+        "rightColumn": 632,
+        "detachFromLayout": true,
+        "widgetId": "59rw5mx0bq",
+        "containerStyle": "none",
+        "isVisible": "true",
+        "version": 1,
+        "parentId": "mvubsemxfo",
+        "isLoading": false,
+        "responsiveBehavior": "fill",
+        "borderRadius": "0px",
+        "flexLayers": [
+            {"children": [
+                {
+                    "id": "urzv99hdc8",
+                    "align": "start"
+                },
+                {
+                    "id": "nh3cu4lb1g",
+                    "align": "start"
+                },
+                {
+                    "id": "xp5u9a9nzq",
+                    "align": "start"
+                }
+            ]},
+            {"children": [{
+                "id": "hpy3pb4xft",
+                "align": "start"
+            }]}
+        ]
+    }],
+    "borderWidth": "0",
+    "flexVerticalAlignment": "stretch",
+    "labelTextSize": "0.875rem",
+    "backgroundColor": "#FFFFFF",
+    "rightColumn": 32,
+    "dynamicHeight": "AUTO_HEIGHT",
+    "widgetId": "mvubsemxfo",
+    "containerStyle": "card",
+    "minWidth": 450,
+    "isVisible": "true",
+    "version": 1,
+    "parentId": "0",
+    "isLoading": false,
+    "responsiveBehavior": "fill",
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "maxDynamicHeight": 9000,
+    "alignment": "start",
+    "minDynamicHeight": 4
+}

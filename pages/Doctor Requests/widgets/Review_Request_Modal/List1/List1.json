@@ -1,6 +1,6 @@
 {
     "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-    "widthInPercentage": 0.41030358785648574,
+    "widthInPercentage": "0.41030358785648574",
     "requiresFlatWidgetChildren": true,
     "isCanvas": true,
     "templateHeight": 160,

@@ -35,8 +35,7 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": [],
-    "createdAt": "2023-11-29T04:55:30Z"
+    "userPermissions": []
   },
   "id": "Doctor Requests_parseLookupEGDoctor.parse",
   "deleted": false,

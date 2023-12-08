@@ -62,8 +62,7 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": [],
-    "createdAt": "2023-11-29T03:08:04Z"
+    "userPermissions": []
   },
   "id": "Doctor Requests_submitStatus",
   "deleted": false,

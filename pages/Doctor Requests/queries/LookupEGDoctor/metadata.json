@@ -54,8 +54,7 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": [],
-    "createdAt": "2023-11-29T04:52:20Z"
+    "userPermissions": []
   },
   "id": "Doctor Requests_LookupEGDoctor",
   "deleted": false,

@@ -2,7 +2,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 8,
     "widgetName": "Image1",
-    "widthInPercentage": 0.38034728610855567,
+    "widthInPercentage": "0.38034728610855567",
     "displayName": "Image",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.69b0f0dd810281fbd6e34fc2c3f39344.svg",
     "topRow": 0,
@@ -17,7 +17,7 @@
         {"key": "image"},
         {"key": "borderRadius"}
     ],
-    "leftColumn": 33,
+    "leftColumn": 28,
     "defaultImage": "https://assets.appsmith.com/widgets/default.png",
     "flexVerticalAlignment": "start",
     "key": "8adl7spm9m",

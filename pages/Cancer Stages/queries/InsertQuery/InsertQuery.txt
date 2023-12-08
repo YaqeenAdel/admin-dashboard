@@ -1,0 +1,16 @@
+INSERT INTO public."CancerStages" (
+	"StageId",
+	"StageName",
+	"Active",
+	"CreatedDate",
+	"LogoURL",
+	"DeletedAt",
+	"UpdatedAt")
+VALUES (
+	'{{insert_form.formData.StageId}}',
+	'{{insert_form.formData.StageName}}',
+	'{{insert_form.formData.Active}}',
+	'{{insert_form.formData.CreatedDate}}',
+	'{{insert_form.formData.LogoURL}}',
+	'{{insert_form.formData.DeletedAt}}',
+	'{{insert_form.formData.UpdatedAt}}');

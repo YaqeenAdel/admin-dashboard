@@ -1,0 +1,8 @@
+UPDATE public."CancerTypes" SET
+		"CancerTypeName" = '{{update_form.fieldState.CancerTypeName.isVisible ? update_form.formData.CancerTypeName : update_form.sourceData.CancerTypeName}}',
+		"Active" = '{{update_form.fieldState.Active.isVisible ? update_form.formData.Active : update_form.sourceData.Active}}',
+    "CreatedDate" = '{{update_form.fieldState.CreatedDate.isVisible ? update_form.formData.CreatedDate : update_form.sourceData.CreatedDate}}',
+		"LogoURL" = '{{update_form.fieldState.LogoURL.isVisible ? update_form.formData.LogoURL : update_form.sourceData.LogoURL}}',
+		"DeletedAt" = '{{update_form.fieldState.DeletedAt.isVisible ? update_form.formData.DeletedAt : update_form.sourceData.DeletedAt}}',
+		"UpdatedAt" = '{{update_form.fieldState.UpdatedAt.isVisible ? update_form.formData.UpdatedAt : update_form.sourceData.UpdatedAt}}'
+WHERE "CancerId" = {{data_table.selectedRow.CancerId}};

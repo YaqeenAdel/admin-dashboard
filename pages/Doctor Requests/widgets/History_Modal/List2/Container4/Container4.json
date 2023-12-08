@@ -31,7 +31,7 @@
         "widgetName": "Canvas8",
         "displayName": "Canvas",
         "topRow": 0,
-        "bottomRow": 112.00000000000003,
+        "bottomRow": 130,
         "parentRowSpace": 1,
         "type": "CANVAS_WIDGET",
         "canExtend": false,
