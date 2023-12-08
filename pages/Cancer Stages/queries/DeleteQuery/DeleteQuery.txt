@@ -1,0 +1,2 @@
+DELETE FROM public."CancerStages"
+  WHERE "StageId" = {{data_table.triggeredRow.StageId}};

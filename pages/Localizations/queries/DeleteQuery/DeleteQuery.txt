@@ -1,0 +1,2 @@
+DELETE FROM public."ResourceLocalization"
+  WHERE "TranslationId" = {{data_table.triggeredRow.TranslationId}};

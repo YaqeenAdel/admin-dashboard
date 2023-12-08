@@ -1,0 +1,18 @@
+INSERT INTO public."Interests" (
+	"InterestId",
+	"Name",
+	"LogoURL",
+	"Active",
+	"CreatedDate",
+	"DeletedAt",
+	"UpdatedAt",
+	"TargetUserType")
+VALUES (
+	'{{insert_form.formData.InterestId}}',
+	'{{insert_form.formData.Name}}',
+	'{{insert_form.formData.LogoURL}}',
+	'{{insert_form.formData.Active}}',
+	'{{insert_form.formData.CreatedDate}}',
+	'{{insert_form.formData.DeletedAt}}',
+	'{{insert_form.formData.UpdatedAt}}',
+	'{{insert_form.formData.TargetUserType}}');

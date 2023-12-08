@@ -3,6 +3,22 @@
     {
       "id": "Doctor Requests",
       "isDefault": true
+    },
+    {
+      "id": "Interests",
+      "isDefault": false
+    },
+    {
+      "id": "Cancer Stages",
+      "isDefault": false
+    },
+    {
+      "id": "Cancer Types",
+      "isDefault": false
+    },
+    {
+      "id": "Localizations",
+      "isDefault": false
     }
   ],
   "viewMode": false,

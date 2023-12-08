@@ -1,0 +1,7 @@
+UPDATE public."ResourceLocalization" SET
+		"Language" = '{{update_form.fieldState.Language.isVisible ? update_form.formData.Language : update_form.sourceData.Language}}',
+		"Translation" = '{{update_form.fieldState.Translation.isVisible ? update_form.formData.Translation : update_form.sourceData.Translation}}',
+    "CancerStageStageId" = '{{update_form.fieldState.CancerStageStageId.isVisible ? update_form.formData.CancerStageStageId : update_form.sourceData.CancerStageStageId}}',
+		"CancerTypeCancerId" = '{{update_form.fieldState.CancerTypeCancerId.isVisible ? update_form.formData.CancerTypeCancerId : update_form.sourceData.CancerTypeCancerId}}',
+		"InterestId" = '{{update_form.fieldState.InterestId.isVisible ? update_form.formData.InterestId : update_form.sourceData.InterestId}}'
+WHERE "TranslationId" = {{data_table.selectedRow.TranslationId}};
