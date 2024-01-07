@@ -1,8 +1,8 @@
 {
-    "mobileWidthInPercentage": 0.37225274725274726,
+    "mobileWidthInPercentage": "0.37225274725274726",
     "boxShadow": "none",
     "widgetName": "Delete_Modal",
-    "widthInPercentage": 0.37225274725274726,
+    "widthInPercentage": "0.37225274725274726",
     "topRow": 87.4,
     "bottomRow": 103.80000000000001,
     "parentRowSpace": 10,
