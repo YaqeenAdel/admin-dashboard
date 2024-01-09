@@ -1,0 +1,5 @@
+mutation EditTranslation($Translations: [ResourceLocalizations_insert_input!]!) {
+  insert_ResourceLocalizations(objects: $Translations, on_conflict: {constraint: PK_ResourceLocalizations, update_columns: Translation}) {
+    affected_rows
+  }
+}

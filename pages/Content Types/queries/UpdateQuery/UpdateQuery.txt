@@ -1,0 +1,4 @@
+UPDATE public."Contents" SET
+"UpdatedAt" = now(),
+  "Raw" = {{update_form.formData.customField1}}
+WHERE "ContentId" = {{data_table.selectedRow.ContentId}};

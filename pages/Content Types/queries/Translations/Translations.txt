@@ -1,0 +1,7 @@
+query Translations ($TranslationId: Int!) {
+  Translations: ResourceLocalizations(where: {TranslationId: {_eq: $TranslationId}}) {
+		TranslationId
+		Language
+		Translation
+  }
+}
