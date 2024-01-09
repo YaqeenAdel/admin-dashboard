@@ -1,0 +1,8 @@
+query GetUser @cached {
+  Users(where: {Email: {_eq: "{{appsmith.user.email}}"}}) {
+    FirstName
+    Gender
+    LastName
+    UserId
+  }
+}

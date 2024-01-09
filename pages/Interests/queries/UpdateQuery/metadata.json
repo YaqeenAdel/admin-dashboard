@@ -43,7 +43,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2024-01-07T21:16:19Z"
   },
   "id": "Interests_UpdateQuery",
   "deleted": false,

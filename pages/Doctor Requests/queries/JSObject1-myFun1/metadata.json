@@ -35,7 +35,8 @@
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2024-01-07T21:16:19Z"
   },
   "id": "Doctor Requests_JSObject1.myFun1",
   "deleted": false,

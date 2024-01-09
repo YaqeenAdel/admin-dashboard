@@ -40,7 +40,9 @@
         {"key": "schema.__root_schema__.children.TargetUserType.accentColor"},
         {"key": "schema.__root_schema__.children.TargetUserType.borderRadius"},
         {"key": "schema.__root_schema__.children.LogoURL.accentColor"},
-        {"key": "schema.__root_schema__.children.Active.borderRadius"}
+        {"key": "schema.__root_schema__.children.TranslationId.defaultValue"},
+        {"key": "schema.__root_schema__.children.TranslationId.borderRadius"},
+        {"key": "schema.__root_schema__.children.TranslationId.accentColor"}
     ],
     "showReset": true,
     "flexVerticalAlignment": "start",
@@ -159,19 +161,17 @@
                 "isCustomField": false,
                 "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Active))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                 "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-                "dataType": "string",
+                "dataType": "boolean",
                 "accessor": "Active",
                 "isVisible": true,
                 "label": "Active",
+                "alignWidget": "LEFT",
                 "originalIdentifier": "Active",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                 "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
                 "position": 2,
                 "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Text Input"
+                "sourceData": true,
+                "fieldType": "Switch"
             },
             "LogoURL": {
                 "labelTextSize": "0.875rem",
@@ -239,6 +239,28 @@
                 "isDisabled": false,
                 "sourceData": "patient",
                 "fieldType": "Select"
+            },
+            "TranslationId": {
+                "labelTextSize": "0.875rem",
+                "identifier": "TranslationId",
+                "boxShadow": "none",
+                "isRequired": false,
+                "isCustomField": false,
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.TranslationId))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                "dataType": "number",
+                "accessor": "TranslationId",
+                "isVisible": true,
+                "label": "Translation Id",
+                "originalIdentifier": "TranslationId",
+                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                "children": {},
+                "isSpellCheck": false,
+                "iconAlign": "left",
+                "position": 7,
+                "isDisabled": false,
+                "sourceData": 2,
+                "fieldType": "Number Input"
             },
             "DeletedAt": {
                 "labelTextSize": "0.875rem",

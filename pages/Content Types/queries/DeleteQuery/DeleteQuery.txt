@@ -1,0 +1,2 @@
+DELETE FROM public."Contents"
+  WHERE "ContentId" = {{data_table.triggeredRow.ContentId}};

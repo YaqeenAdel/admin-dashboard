@@ -1,0 +1,21 @@
+query ContentTypes {
+  Contents(where: {ParentContentId: {_is_null: true}}) {
+    AuthorUserId
+    Raw
+    ContentId
+    TranslationId
+    Translations {
+      Language
+      Translation
+    }
+    User {
+      FirstName
+      LastName
+    }
+    Contents_aggregate {
+      aggregate {
+        count
+      }
+    }
+  }
+}

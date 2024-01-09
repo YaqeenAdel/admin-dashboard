@@ -23,7 +23,8 @@
         {"key": "primaryColumns.CreatedDate.computedValue"},
         {"key": "primaryColumns.DeletedAt.computedValue"},
         {"key": "primaryColumns.UpdatedAt.computedValue"},
-        {"key": "primaryColumns.TargetUserType.computedValue"}
+        {"key": "primaryColumns.TargetUserType.computedValue"},
+        {"key": "primaryColumns.TranslationId.computedValue"}
     ],
     "leftColumn": 0,
     "delimiter": ",",
@@ -64,14 +65,15 @@
     "widgetName": "data_table",
     "defaultPageSize": 0,
     "columnOrder": [
-        "LogoURL",
-        "TargetUserType",
-        "Name",
-        "Active",
         "InterestId",
+        "Name",
+        "LogoURL",
+        "Active",
         "CreatedDate",
         "DeletedAt",
         "UpdatedAt",
+        "TargetUserType",
+        "TranslationId",
         "customColumn1"
     ],
     "dynamicPropertyPathList": [{"key": "primaryColumns.customColumn1.borderRadius"}],
@@ -206,6 +208,25 @@
             "id": "customColumn1",
             "isDisabled": false,
             "buttonLabelColor": "#FFFFFF"
+        },
+        "TranslationId": {
+            "isCellVisible": true,
+            "isDerived": false,
+            "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.TranslationId))}}",
+            "textSize": "0.875rem",
+            "index": 8,
+            "isVisible": true,
+            "label": "TranslationId",
+            "textColor": "",
+            "columnType": "text",
+            "horizontalAlignment": "LEFT",
+            "width": 150,
+            "enableFilter": true,
+            "enableSort": true,
+            "id": "TranslationId",
+            "isDisabled": false,
+            "cellBackground": "",
+            "verticalAlignment": "CENTER"
         },
         "DeletedAt": {
             "isCellVisible": true,
