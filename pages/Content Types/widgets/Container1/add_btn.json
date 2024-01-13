@@ -11,7 +11,7 @@
     "mobileRightColumn": 13.544973544973544,
     "parentColumnSpace": 12.0703125,
     "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 54.18216682646212,
+    "leftColumn": 56.465047829286235,
     "dynamicBindingPathList": [
         {"key": "buttonColor"},
         {"key": "borderRadius"}
@@ -19,7 +19,7 @@
     "isDisabled": false,
     "flexVerticalAlignment": "end",
     "labelTextSize": "0.875rem",
-    "rightColumn": 59.09108341323106,
+    "rightColumn": 60.23252391464312,
     "iconName": "add",
     "widgetId": "nh3cu4lb1g",
     "minWidth": 50,

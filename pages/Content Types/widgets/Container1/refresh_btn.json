@@ -11,7 +11,7 @@
     "mobileRightColumn": 27.08994708994709,
     "parentColumnSpace": 12.0703125,
     "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 59.09108341323106,
+    "leftColumn": 60.23252391464312,
     "dynamicBindingPathList": [
         {"key": "buttonColor"},
         {"key": "borderRadius"}

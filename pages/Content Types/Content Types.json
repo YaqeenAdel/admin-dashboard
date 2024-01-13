@@ -82,18 +82,6 @@
           ],
           [
             {
-              "id": "Content Types_Translations",
-              "name": "Translations",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "data_table.triggeredRow.TranslationId"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
               "id": "Content Types_currentUser",
               "name": "currentUser",
               "confirmBeforeExecute": false,

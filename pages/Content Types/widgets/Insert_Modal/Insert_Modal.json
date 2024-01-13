@@ -1,9 +1,9 @@
 {
-    "mobileWidthInPercentage": 0.37225274725274726,
+    "mobileWidthInPercentage": "0.37225274725274726",
     "boxShadow": "none",
     "mobileBottomRow": 282.4,
     "widgetName": "Insert_Modal",
-    "widthInPercentage": 0.37225274725274726,
+    "widthInPercentage": "0.37225274725274726",
     "topRow": 105.00000000000001,
     "bottomRow": 188,
     "parentRowSpace": 10,
